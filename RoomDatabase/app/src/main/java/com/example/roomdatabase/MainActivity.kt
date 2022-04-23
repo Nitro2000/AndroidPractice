@@ -30,7 +30,7 @@ class MainActivity : AppCompatActivity() {
         txt = findViewById(R.id.textView)
 
         GlobalScope.launch {
-            contactDao.addContact(Contact(0, "Rishabh", "8959822592"))
+            contactDao.addContact(Contact(0, "Rishabh", "8959822592", 1))
         }
     }
 
