@@ -18,13 +18,14 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
         initialise()
+        
 
         txt.text = model.getCount().toString()
         button.setOnClickListener{
             setCount()
         }
-
     }
+
     fun setCount() {
         model.updateCount()
         txt.text = model.getCount().toString()
